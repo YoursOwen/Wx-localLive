@@ -1,17 +1,34 @@
 // pages/index/index.js
+ /**
+   * 引入封装的工具
+   */
+const fetch = require('../../utils/fetch')
 Page({
-
   /**
    * 页面的初始数据
+   *
    */
   data: {
-
+    categories: [],
+    slides:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
+    fetch("categories").then(res => {
+      this.setData({
+        categories: res.data
+      })
+    })
+
+    fetch("slides").then(res => {
+      this.setData({
+        slides:res.data
+      })
+    })
 
   },
 

@@ -1,8 +1,28 @@
-<swiper>
-  <swiper-item>
-    <image src='/assets/images/banner-01.png'></image>
-  </swiper-item>
-  <swiper-item>
-   <image src='/assets/images/banner-02.png'></image>
-  </swiper-item>
+<swiper class="slider">
+
+    <swiper-item wx:for="{{ slides }}" wx::key="id">
+      <!-- 通过wx:if wx:esle 来判断条件显示隐藏 -->
+      <navigator wx:if='{{item.src}}' url="{{ item.link }}">
+          <image mode='aspectFill' src='{{ item.image }}'></image>
+      </navigator>
+      <image wx:else mode='aspectFill' src='{{ item.image }}'></image>
+    </swiper-item>
+
 </swiper>
+
+<view class='grids'>
+  <navigator class='item' url='/pages/list/list?cat={{ item.id }}' wx:for="{{ categories }}" wx:key="id" >
+    <image src="{{ item.icon }}"/>
+  <text>{{ item.name }}</text>
+  </navigator>
+
+</view>
+
+<view class="recommond">
+  <view class="item">
+    <image src="/assets/images/link-01.png" />
+  </view>
+  <view class='item'>
+    <image src="/assets/images/link-02.png" />
+  </view>
+</view>

@@ -7,38 +7,49 @@
     "pages/profile/profile"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#2b3b49",
+    "navigationBarBackgroundColor": "#3a4861",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "浠水本地宝",
     "backgroundColor": "#eeeeee",
+    "backgroundColorBottom":"#eeeeee",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": true
   },
   "tabBar": {
+    "color":"#999",
+    "selectedColor":"#444",
+    "borderStyle":"white",
+    "backgroundColor":"#fff",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "主页",
         "iconPath": "assets/tabs/home.png",
-        "selectedIconPath": "assets/tabs/home-active.png"
+        "selectedIconPath": "assets/tabs/home-active.png",
+        "color":"#ee523d",
+        "selectedColor":"#ee523d"
       },
       {
         "pagePath": "pages/message/message",
         "text": "消息",
         "iconPath": "assets/tabs/message.png",
-        "selectedIconPath": "assets/tabs/message-active.png"
+        "selectedIconPath": "assets/tabs/message-active.png",
+        "color": "#13a7a0",
+        "selectedColor": "#13a7a0"
       },
       {
         "pagePath": "pages/profile/profile",
         "text": "我的",
         "iconPath": "assets/tabs/profile.png",
-        "selectedIconPath": "assets/tabs/profile-active.png"
+        "selectedIconPath": "assets/tabs/profile-active.png",
+        "color": "#69b03c"
       },
       {
         "pagePath": "pages/contact/contact",
         "text": "联系我们",
         "iconPath": "assets/tabs/contact.png",
-        "selectedIconPath": "assets/tabs/contact-active.png"
+        "selectedIconPath": "assets/tabs/contact-active.png",
+        "color": "#fa7285"
       } 
     ]
   }
