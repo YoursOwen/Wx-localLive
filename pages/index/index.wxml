@@ -1,0 +1,8 @@
+<swiper>
+  <swiper-item>
+    <image src='/assets/images/banner-01.png'></image>
+  </swiper-item>
+  <swiper-item>
+   <image src='/assets/images/banner-02.png'></image>
+  </swiper-item>
+</swiper>
