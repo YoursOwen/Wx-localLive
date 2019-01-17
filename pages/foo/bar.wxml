@@ -1,0 +1,9 @@
+<view>
+  <view wx:for="{{ student }}" wx:key="id">
+  <checkbox></checkbox>
+  <text>{{ item.name }}</text>
+  <text>{{ item.age }}</text>
+  <text>{{ item.id }}</text>
+  </view>
+
+</view>
